@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     EditText email_input,password_input;
     TextView register;
     Button btnLogin;
-    Vibrator v;
+
 
     final String loginURL = "http://192.168.0.105/android-users/login.php";
 
@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         password_input = findViewById(R.id.loginPassword);
         register = findViewById(R.id.register);
         btnLogin = findViewById(R.id.btnLogin);
-        v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
